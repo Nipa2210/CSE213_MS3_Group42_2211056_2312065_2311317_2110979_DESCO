@@ -1,4 +1,4 @@
-package com.example.group42_desco.Nipa2211056;
+package com.example.group42_desco;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
