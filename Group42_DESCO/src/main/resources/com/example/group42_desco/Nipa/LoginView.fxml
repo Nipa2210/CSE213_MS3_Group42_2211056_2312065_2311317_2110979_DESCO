@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="494.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.login">
+   <children>
+      <Label fx:id="Logintextfield" alignment="CENTER" layoutX="199.0" layoutY="64.0" prefHeight="36.0" prefWidth="191.0" style="-fx-background-color: SkyBlue; -fx-border-color: #240dcf;" text="Login" textAlignment="CENTER" textFill="#240dcf">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="103.0" layoutY="159.0" prefHeight="30.0" prefWidth="74.0" style="-fx-border-color: black;" text="Username" textAlignment="CENTER" textFill="#151515">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="EnteryourNametextfield" layoutX="211.0" layoutY="161.0" />
+      <PasswordField fx:id="UserPasswordfield" layoutX="211.0" layoutY="206.0" />
+      <Label alignment="CENTER" layoutX="103.0" layoutY="203.0" prefHeight="30.0" prefWidth="74.0" style="-fx-border-color: black;" text="Password" textAlignment="CENTER" textFill="#151515">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="warningLabeltextfield" layoutX="211.0" layoutY="246.0" prefHeight="26.0" prefWidth="191.0" style="-fx-border-color: red;" />
+      <Button layoutX="437.0" layoutY="244.0" mnemonicParsing="false" onAction="#EnterOnaction" style="-fx-border-color: blue;" text="Enter" textFill="#281fa6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
