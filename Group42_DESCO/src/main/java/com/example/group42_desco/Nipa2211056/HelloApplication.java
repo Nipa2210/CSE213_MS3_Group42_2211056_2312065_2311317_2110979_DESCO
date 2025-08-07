@@ -1,4 +1,4 @@
-package com.example.group42_desco;
+package com.example.group42_desco.Nipa2211056;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
