@@ -5,12 +5,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="436.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Nipa2211056.CSRDashboard">
    <children>
       <AnchorPane prefHeight="436.0" prefWidth="239.0" style="-fx-background-color: skyblue;">
          <children>
-            <Button layoutX="14.0" layoutY="42.0" mnemonicParsing="false" onAction="#VccOnaction" prefHeight="26.0" prefWidth="214.0" text="View complaints from customers" />
+            <Button layoutX="14.0" layoutY="42.0" mnemonicParsing="false" onAction="#VccOnaction" prefHeight="26.0" prefWidth="214.0" text="View customer complaints" />
             <Button layoutX="14.0" layoutY="83.0" mnemonicParsing="false" onAction="#VcdOnaction" prefHeight="26.0" prefWidth="214.0" text="View complaint Details" />
             <Button layoutX="14.0" layoutY="127.0" mnemonicParsing="false" onAction="#VcpOnaction" prefHeight="26.0" prefWidth="214.0" text="View Customer Profile" />
             <Button layoutX="14.0" layoutY="173.0" mnemonicParsing="false" onAction="#UCSOnaction" prefHeight="26.0" prefWidth="214.0" text="Update Complaint Status" />

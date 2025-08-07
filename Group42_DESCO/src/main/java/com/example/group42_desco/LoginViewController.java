@@ -20,10 +20,6 @@
 //
 //    @FXML
 //    private Label warningLabeltextfield;
-//
-//    @FXML
-//    private ComboBox userTypecombobox;
-//
 //    @FXML
 //    public void EnterOnaction(ActionEvent actionEvent) {
 //    }
