@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Sakira.CustomerModuleController">
+   <children>
+      <AnchorPane prefHeight="410.0" prefWidth="621.0">
+         <children>
+            <Label layoutX="258.0" layoutY="14.0" text="Customer Module">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="20.0" layoutY="71.0" mnemonicParsing="false" onAction="#SearchOA" text="Search" />
+            <TextField fx:id="CustomerModuleSearchTF" layoutX="110.0" layoutY="71.0" />
+            <TableView fx:id="CustomerModuleTV" layoutX="14.0" layoutY="108.0" prefHeight="200.0" prefWidth="583.0">
+               <columns>
+                  <TableColumn fx:id="CustomerNameTC" prefWidth="115.0" text="Customer Name" />
+                  <TableColumn fx:id="CustomerIDTC" prefWidth="90.0" text="Customer ID" />
+                  <TableColumn fx:id="CustomerAreaTC" prefWidth="90.0" text="Customer Area" />
+                  <TableColumn fx:id="ContactDetailsTC" prefWidth="90.0" text="Contact Details" />
+                  <TableColumn fx:id="BillingHistoryTC" prefWidth="90.0" text="Billing History" />
+                  <TableColumn fx:id="OutstandingDuesTC" prefWidth="106.0" text="Outstanding Dues" />
+               </columns>
+            </TableView>
+            <Button layoutX="547.0" layoutY="314.0" mnemonicParsing="false" onAction="#ViewOA" text="View" />
+            <Button layoutX="536.0" layoutY="350.0" mnemonicParsing="false" onAction="#PreviousOA" text="Previous" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

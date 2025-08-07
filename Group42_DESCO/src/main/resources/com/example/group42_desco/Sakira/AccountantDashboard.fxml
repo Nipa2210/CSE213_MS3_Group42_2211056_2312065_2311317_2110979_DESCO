@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Sakira.AccountantDashboardController">
+    <children>
+        <AnchorPane prefHeight="410.0" prefWidth="610.0">
+            <children>
+                <Label layoutX="251.0" layoutY="14.0" text="Accountant">
+                    <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                    </font>
+                </Label>
+                <Button layoutX="29.0" layoutY="84.0" mnemonicParsing="false" onAction="#GenerateSalarySheetOA" text="Generate Salary Sheet" />
+                <Button layoutX="29.0" layoutY="123.0" mnemonicParsing="false" onAction="#ViewBalanceSheetOA" text="View Balance Sheet" />
+                <Button layoutX="29.0" layoutY="161.0" mnemonicParsing="false" onAction="#GenerateMonthlyFinancialReportsOA" text="Generate Monthly Financial Reports" />
+                <Button layoutX="29.0" layoutY="200.0" mnemonicParsing="false" onAction="#TrackandReportElectricityRevOA" text="Track &amp; Report Electricity Rev." />
+                <Button layoutX="258.0" layoutY="84.0" mnemonicParsing="false" onAction="#CreateBudgetOA" prefHeight="26.0" prefWidth="139.0" text="Create Budget" />
+                <Button layoutX="258.0" layoutY="123.0" mnemonicParsing="false" onAction="#CreateEBillOA" text="Create E-Bill" />
+                <Button layoutX="259.0" layoutY="200.0" mnemonicParsing="false" onAction="#PenaltyForDelayedPaymentsOA" text="Penalty for Delayed Payments" />
+                <Button layoutX="258.0" layoutY="161.0" mnemonicParsing="false" onAction="#MakePaymentstoSuppliersOA" text="Make Payments to Suppliers" />
+                <Button layoutX="517.0" layoutY="27.0" mnemonicParsing="false" onAction="#LoadOA" text="Load" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

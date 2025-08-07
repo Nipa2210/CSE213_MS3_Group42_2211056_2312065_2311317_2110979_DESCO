@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Sakira.MDDashBoardController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="223.0" layoutY="14.0" text="Managing Director">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="53.0" layoutY="106.0" mnemonicParsing="false" onAction="#ViewSalarySheetOA" text="View Salary Sheet" />
+            <Button layoutX="186.0" layoutY="106.0" mnemonicParsing="false" onAction="#PurchaseRequisitionApprovalOA" text="Purchase Requisition Approval" />
+            <Button layoutX="389.0" layoutY="106.0" mnemonicParsing="false" onAction="#ApprovalOfSalarySheetOA" text="Approval of Salary Sheet" />
+            <Button layoutX="42.0" layoutY="158.0" mnemonicParsing="false" onAction="#ViewCustomerProfileOA" text="View Customer Profile" />
+            <Button layoutX="236.0" layoutY="158.0" mnemonicParsing="false" onAction="#ViewSupplierProfileOA" text="View Supplier Profile" />
+            <Button layoutX="400.0" layoutY="158.0" mnemonicParsing="false" onAction="#SetUpTandCOA" text="Set Up T&amp;C" />
+            <Button layoutX="130.0" layoutY="228.0" mnemonicParsing="false" onAction="#ViewElectricityStorageOA" text="View Electricity Storage" />
+            <Button layoutX="350.0" layoutY="228.0" mnemonicParsing="false" onAction="#ViewFeedbackOA" text="View Feedback" />
+            <Button layoutX="527.0" layoutY="40.0" mnemonicParsing="false" onAction="#LoadOA" text="Load" />
+            <Button layoutX="478.0" layoutY="301.0" mnemonicParsing="false" onAction="#LogOutOA" text="Log Out" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

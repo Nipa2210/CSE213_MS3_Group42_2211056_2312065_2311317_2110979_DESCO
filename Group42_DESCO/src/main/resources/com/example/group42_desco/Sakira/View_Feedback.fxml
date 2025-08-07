@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Sakira.ViewFeedbackController">
+   <children>
+      <AnchorPane prefHeight="410.0" prefWidth="610.0">
+         <children>
+            <Label layoutX="217.0" layoutY="14.0" text="View FeedBack">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="38.0" layoutY="50.0" mnemonicParsing="false" onAction="#CustomerServiceOA" text="Customer Service" />
+            <TableView fx:id="ViewFeedBackTV" layoutX="12.0" layoutY="124.0" prefHeight="200.0" prefWidth="577.0">
+               <columns>
+                  <TableColumn fx:id="CustomerNameTC" prefWidth="155.0" text="Customer Name" />
+                  <TableColumn fx:id="CustomerContactTC" prefWidth="143.0" text="Customer Contact" />
+                  <TableColumn fx:id="CustomerMessageTC" minWidth="0.0" prefWidth="159.0" text="Customer Message" />
+                  <TableColumn fx:id="DateTC" prefWidth="118.0" text="Date" />
+               </columns>
+            </TableView>
+            <ComboBox fx:id="FilterCB" layoutX="340.0" layoutY="50.0" prefWidth="150.0" promptText="Filter:" />
+            <Button layoutX="542.0" layoutY="330.0" mnemonicParsing="false" onAction="#ViewOA" text="View" />
+            <Button layoutX="14.0" layoutY="356.0" mnemonicParsing="false" onAction="#PreviousOA" text="Previous" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
