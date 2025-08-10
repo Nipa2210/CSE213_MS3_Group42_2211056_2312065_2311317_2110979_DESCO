@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="450.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Nipa2211056.ProfileView">
    <children>
       <Label layoutX="195.0" layoutY="94.0" prefHeight="18.0" prefWidth="90.0" text="Name:" />
@@ -15,8 +14,8 @@
       <Label layoutX="195.0" layoutY="174.0" prefHeight="18.0" prefWidth="90.0" text="Meter Number:" />
       <Label layoutX="195.0" layoutY="214.0" prefHeight="18.0" prefWidth="97.0" text="Connection Type:" />
       <Button layoutX="309.0" layoutY="265.0" mnemonicParsing="false" onAction="#EditOnaction" prefHeight="26.0" prefWidth="51.0" text="Edit" />
-      <Button layoutX="454.0" layoutY="265.0" mnemonicParsing="false" onAction="#SaveOnaction" prefHeight="26.0" prefWidth="51.0" style="-fx-background-color: red;" text="Save" textFill="WHITE" />
-      <Button layoutX="605.0" layoutY="265.0" mnemonicParsing="false" onAction="#CancelOnaction" text="Cancel" />
+      <Button layoutX="429.0" layoutY="265.0" mnemonicParsing="false" onAction="#SaveOnaction" prefHeight="26.0" prefWidth="51.0" style="-fx-background-color: red;" text="Save" textFill="WHITE" />
+      <Button layoutX="530.0" layoutY="265.0" mnemonicParsing="false" onAction="#CancelOnaction" text="Cancel" />
       <TextField fx:id="Nametextfield" layoutX="313.0" layoutY="91.0" />
       <TextField fx:id="Addresstextfield" layoutX="313.0" layoutY="131.0" />
       <TextField fx:id="MNtextfield" layoutX="313.0" layoutY="171.0" />
