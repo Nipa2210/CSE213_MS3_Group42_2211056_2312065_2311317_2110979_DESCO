@@ -48,21 +48,22 @@ public class PayBillView {
     @FXML
     void PbillOnaction(ActionEvent actionEvent) {
 
+
+    }
+
+    @FXML
+    void PhistoryOnaction(ActionEvent actionEvent) {
+
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nipa2211056/PaymentHistoryView.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nipa/PaymentHistory_View.fxml"));
             Scene nextScene = new Scene(fxmlLoader.load());
             Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
-            nextStage.setTitle("Approval Of Salary Sheet");
+            nextStage.setTitle("Payment History");
             nextStage.setScene(nextScene);
             nextStage.show();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-
-    }
-
-    @FXML
-    void PhistoryOnaction(ActionEvent event) {
 
     }
 

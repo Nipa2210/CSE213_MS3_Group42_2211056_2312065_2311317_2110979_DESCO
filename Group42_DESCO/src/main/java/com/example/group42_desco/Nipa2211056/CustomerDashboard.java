@@ -13,6 +13,16 @@ public class CustomerDashboard {
     @FXML
     void EusageOnaction(ActionEvent actionEvent) {
 
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nipa/ElectricityUsageView.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("Complaint Form");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @FXML
@@ -63,12 +73,23 @@ public class CustomerDashboard {
     }
 
     @FXML
-    void profileOnaction(ActionEvent event) {
+    void profileOnaction(ActionEvent actionEvent) {
 
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nipa/ProfileView.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("Profile View");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+
+    }
     }
 
     @FXML
-    void serviceReqOnaction(ActionEvent event) {
+    void serviceReqOnaction(ActionEvent actionEvent) {
 
     }
 
