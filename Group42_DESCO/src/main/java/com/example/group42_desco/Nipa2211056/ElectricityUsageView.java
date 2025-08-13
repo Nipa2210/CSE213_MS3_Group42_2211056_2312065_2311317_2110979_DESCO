@@ -16,7 +16,7 @@ public class ElectricityUsageView {
     private TableColumn<?, ?> UnitsconsumedColumn;
 
     @FXML
-    void backtoDashboardOnaction(ActionEvent event) {
+    void backtoDashboardOnaction(ActionEvent actionEvent) {
 
     }
 
