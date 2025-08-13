@@ -16,21 +16,33 @@ public class ViewSupplierProfileController
     @javafx.fxml.FXML
     private TableColumn PaymentStatusTC;
     @javafx.fxml.FXML
-    private TextField ViewSupplierProfileTF;
-    @javafx.fxml.FXML
     private TableView ViewSupplierProfileTV;
     @javafx.fxml.FXML
     private TableColumn ContactInfoTC;
+    @javafx.fxml.FXML
+    private TextField PaymentStatusTF;
+    @javafx.fxml.FXML
+    private TextField ContactInfoTF;
+    @javafx.fxml.FXML
+    private TextField SupplierIDTF;
+    @javafx.fxml.FXML
+    private TextField SupplierNameTF;
+    @javafx.fxml.FXML
+    private TextField PastTransectionsTF;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void SearchOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
     public void PreviousOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void ViewOA(ActionEvent actionEvent) {
     }
 }

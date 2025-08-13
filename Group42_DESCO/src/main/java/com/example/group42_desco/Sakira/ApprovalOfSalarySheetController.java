@@ -11,15 +11,19 @@ public class ApprovalOfSalarySheetController
     @javafx.fxml.FXML
     private TableColumn SalaryBreakDownTC;
     @javafx.fxml.FXML
-    private TableColumn OvertimeBonusesDeductionTC;
-    @javafx.fxml.FXML
     private TableColumn TotalMonthlySalaryDisbursedTC;
+    @javafx.fxml.FXML
+    private TableColumn DeductionTC;
+    @javafx.fxml.FXML
+    private TableColumn BonusesTC;
+    @javafx.fxml.FXML
+    private TableColumn OvertimeTC;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void ApproveSalarySheetOA(ActionEvent actionEvent) {
     }
 

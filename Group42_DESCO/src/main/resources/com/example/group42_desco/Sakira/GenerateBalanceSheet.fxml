@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Sakira.ViewBalanceSheetController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Sakira.GenerateBalanceSheetController">
    <children>
       <AnchorPane prefHeight="410.0" prefWidth="610.0">
          <children>
@@ -18,14 +17,13 @@
                   <Font name="System Bold Italic" size="20.0" />
                </font>
             </Label>
-            <Button layoutX="33.0" layoutY="58.0" mnemonicParsing="false" onAction="#BalanceSheetOA" text="Balance Sheet" />
-            <ComboBox fx:id="DesiredMonthCB" layoutX="158.0" layoutY="59.0" prefWidth="150.0" promptText="Desired Month " />
-            <ComboBox fx:id="FiscalYearCB" layoutX="348.0" layoutY="59.0" prefWidth="150.0" promptText="Fiscal Year" />
-            <Button layoutX="457.0" layoutY="102.0" mnemonicParsing="false" onAction="#FilterOA" text="filter" />
+            <ComboBox fx:id="DesiredMonthCB" layoutX="47.0" layoutY="59.0" prefWidth="150.0" promptText="Desired Month " />
+            <ComboBox fx:id="FiscalYearCB" layoutX="230.0" layoutY="59.0" prefWidth="150.0" promptText="Fiscal Year" />
+            <Button layoutX="394.0" layoutY="97.0" mnemonicParsing="false" onAction="#FilterOA" text="filter" />
             <TableView fx:id="ViewBalanceSheetTV" layoutX="81.0" layoutY="136.0" prefHeight="200.0" prefWidth="417.0">
                <columns>
-                  <TableColumn fx:id="AssetsTC" prefWidth="116.0" text="Assets" />
-                  <TableColumn fx:id="LiabilitiesTC" prefWidth="128.0" text="Liabilities" />
+                  <TableColumn fx:id="AssetsTC" prefWidth="116.0" text="Desired Month" />
+                  <TableColumn fx:id="LiabilitiesTC" prefWidth="128.0" text="Fiscal Year" />
                   <TableColumn fx:id="EquityBreakdownTC" prefWidth="172.0" text="Equity Breakdown" />
                </columns>
             </TableView>

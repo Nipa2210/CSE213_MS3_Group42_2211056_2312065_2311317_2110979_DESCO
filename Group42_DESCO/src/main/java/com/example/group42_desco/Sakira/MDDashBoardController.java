@@ -65,11 +65,13 @@ public class MDDashBoardController
     public void ViewSupplierProfileOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
-    public void ViewSalarySheetOA(ActionEvent actionEvent) {
-    }
+
 
     @javafx.fxml.FXML
     public void PurchaseRequisitionApprovalOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void ViewSalarySheetOnAction(ActionEvent actionEvent) {
     }
 }

@@ -7,14 +7,14 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Sakira.MDDashBoardController">
    <children>
-      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+      <AnchorPane prefHeight="410.0" prefWidth="610.0">
          <children>
             <Label layoutX="223.0" layoutY="14.0" text="Managing Director">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <Button layoutX="53.0" layoutY="106.0" mnemonicParsing="false" onAction="#ViewSalarySheetOA" text="View Salary Sheet" />
+            <Button layoutX="53.0" layoutY="106.0" mnemonicParsing="false" onAction="#ViewSalarySheetOnAction" text="View Salary Sheet" />
             <Button layoutX="186.0" layoutY="106.0" mnemonicParsing="false" onAction="#PurchaseRequisitionApprovalOA" text="Purchase Requisition Approval" />
             <Button layoutX="389.0" layoutY="106.0" mnemonicParsing="false" onAction="#ApprovalOfSalarySheetOA" text="Approval of Salary Sheet" />
             <Button layoutX="42.0" layoutY="158.0" mnemonicParsing="false" onAction="#ViewCustomerProfileOA" text="View Customer Profile" />

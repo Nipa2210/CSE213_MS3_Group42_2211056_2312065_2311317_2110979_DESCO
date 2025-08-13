@@ -5,9 +5,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Sakira.GenerateSalarySheetController">
    <children>
@@ -18,23 +18,22 @@
                   <Font name="System Bold Italic" size="20.0" />
                </font>
             </Label>
-            <Button layoutX="32.0" layoutY="52.0" mnemonicParsing="false" onAction="#SalaryManagementOA" text="Salary Management " />
-            <ComboBox fx:id="SystemDisplaysOptionsCB" layoutX="183.0" layoutY="52.0" prefHeight="26.0" prefWidth="192.0" promptText="System Displays Options:" />
-            <ComboBox fx:id="PaymentTypeCB" layoutX="183.0" layoutY="91.0" prefHeight="26.0" prefWidth="192.0" promptText="Payment Type:" />
-            <ComboBox fx:id="DepartmentCB" layoutX="396.0" layoutY="91.0" prefHeight="26.0" prefWidth="192.0" promptText="Department:" />
+            <ComboBox fx:id="PaymentTypeCB" layoutX="14.0" layoutY="107.0" prefHeight="26.0" prefWidth="192.0" promptText="Payment Type:" />
+            <ComboBox fx:id="DepartmentCB" layoutX="257.0" layoutY="53.0" prefHeight="26.0" prefWidth="192.0" promptText="Department:" />
             <Button layoutX="449.0" layoutY="127.0" mnemonicParsing="false" onAction="#GenerateSalarySheetOA" text="Generate Salary Sheet" />
-            <TableView fx:id="GenerateSalarySheetTV" layoutX="11.0" layoutY="160.0" prefHeight="187.0" prefWidth="579.0">
+            <TableView fx:id="GenerateSalarySheetTV" layoutX="11.0" layoutY="160.0" prefHeight="187.0" prefWidth="594.0">
                <columns>
-                  <TableColumn fx:id="GenerateSalarySheetTC" prefWidth="133.0" text="Generate Salary Sheet" />
-                  <TableColumn fx:id="ViewPreviousSheetsTC" prefWidth="129.0" text="View Previous Sheets" />
-                  <TableColumn fx:id="MonthTC" prefWidth="82.0" text="Month " />
-                  <TableColumn fx:id="DepartmentTC" prefWidth="127.0" text="Department" />
-                  <TableColumn fx:id="PaymentTypeTC" prefWidth="110.0" text="Payment Type" />
+                  <TableColumn fx:id="GenerateSalarySheetTC" prefWidth="148.0" text="Employee Name" />
+                  <TableColumn fx:id="MonthTC" prefWidth="79.0" text="Month " />
+                  <TableColumn fx:id="DepartmentTC" prefWidth="115.0" text="Department" />
+                  <TableColumn fx:id="PaymentTypeTC" prefWidth="116.0" text="Payment Type" />
+                  <TableColumn fx:id="PaymentTypeTC1" prefWidth="135.0" text="Net Salary" />
                </columns>
             </TableView>
-            <Button layoutX="14.0" layoutY="360.0" mnemonicParsing="false" onAction="#ViewOA" text="View" />
             <Button layoutX="518.0" layoutY="360.0" mnemonicParsing="false" onAction="#PreviousOA" text="Previous" />
-            <ComboBox fx:id="MonthComboBox" layoutX="396.0" layoutY="53.0" prefWidth="150.0" promptText="Month" />
+            <ComboBox fx:id="MonthComboBox" layoutX="25.0" layoutY="53.0" prefWidth="150.0" promptText="Month" />
+            <TextField layoutX="340.0" layoutY="94.0" />
+            <Label layoutX="242.0" layoutY="99.0" text="Employee Name : " />
          </children>
       </AnchorPane>
    </children>

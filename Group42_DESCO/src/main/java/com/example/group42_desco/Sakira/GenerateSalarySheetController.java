@@ -16,25 +16,21 @@ public class GenerateSalarySheetController
     @javafx.fxml.FXML
     private TableColumn DepartmentTC;
     @javafx.fxml.FXML
-    private ComboBox SystemDisplaysOptionsCB;
-    @javafx.fxml.FXML
     private ComboBox PaymentTypeCB;
     @javafx.fxml.FXML
     private TableColumn PaymentTypeTC;
     @javafx.fxml.FXML
     private TableView GenerateSalarySheetTV;
     @javafx.fxml.FXML
-    private TableColumn ViewPreviousSheetsTC;
-    @javafx.fxml.FXML
     private ComboBox MonthComboBox;
+    @javafx.fxml.FXML
+    private TableColumn PaymentTypeTC1;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
-    public void SalaryManagementOA(ActionEvent actionEvent) {
-    }
+
 
     @javafx.fxml.FXML
     public void PreviousOA(ActionEvent actionEvent) {
@@ -44,7 +40,5 @@ public class GenerateSalarySheetController
     public void GenerateSalarySheetOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
-    public void ViewOA(ActionEvent actionEvent) {
-    }
+
 }

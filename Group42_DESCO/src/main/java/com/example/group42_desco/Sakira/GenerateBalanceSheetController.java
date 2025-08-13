@@ -4,34 +4,27 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 
-public class TrackReportElectricityRevController
+public class GenerateBalanceSheetController
 {
     @javafx.fxml.FXML
-    private ComboBox PaymentMethodCB;
+    private TableView ViewBalanceSheetTV;
     @javafx.fxml.FXML
-    private ComboBox BillingPeriodCB;
+    private TableColumn LiabilitiesTC;
     @javafx.fxml.FXML
-    private ComboBox ZoneCB;
+    private ComboBox DesiredMonthCB;
     @javafx.fxml.FXML
-    private TableColumn PaymentMethodTC;
+    private TableColumn EquityBreakdownTC;
     @javafx.fxml.FXML
-    private TextField TotalCollectedRevenueTF;
+    private ComboBox FiscalYearCB;
     @javafx.fxml.FXML
-    private TableColumn BillingPeriodTC;
-    @javafx.fxml.FXML
-    private TableColumn ZoneTC;
-    @javafx.fxml.FXML
-    private TableColumn TotalCollectedRevenueTC;
-    @javafx.fxml.FXML
-    private TableView TrackandReportElectricityRevTV;
+    private TableColumn AssetsTC;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @Deprecated
+    @javafx.fxml.FXML
     public void FilterOA(ActionEvent actionEvent) {
     }
 

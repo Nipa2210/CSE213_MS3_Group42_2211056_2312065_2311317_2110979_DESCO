@@ -20,21 +20,21 @@ public class MakePaymentsToSuppliersController
     @javafx.fxml.FXML
     private Label SendMailLabel;
     @javafx.fxml.FXML
-    private ComboBox PaymentDetailsCB;
-    @javafx.fxml.FXML
     private TableColumn DateTC;
+    @javafx.fxml.FXML
+    private TextField ReferenceNumberTF;
+    @javafx.fxml.FXML
+    private TextField AmountTF;
+    @javafx.fxml.FXML
+    private DatePicker DateDP;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
-    public void SuppliersPaymentsOA(ActionEvent actionEvent) {
-    }
 
-    @javafx.fxml.FXML
-    public void ViewInvoicesandDueAmountsOA(ActionEvent actionEvent) {
-    }
+
+
 
     @javafx.fxml.FXML
     public void PreviousOA(ActionEvent actionEvent) {
