@@ -16,10 +16,10 @@ public class AccountantDashboardController
     @javafx.fxml.FXML
     public void MakePaymentstoSuppliersOA(ActionEvent actionEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/MakePaymentstoSuppliers.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/MakePaymentsToSuppliers.fxml"));
             Scene nextScene = new Scene(fxmlLoader.load());
             Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
-            nextStage.setTitle("Make Payments to Suppliers");
+            nextStage.setTitle("Make Payments To Suppliers");
             nextStage.setScene(nextScene);
             nextStage.show();
         } catch (Exception e) {
