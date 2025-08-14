@@ -28,6 +28,18 @@ public class CustomerDashboard {
     @FXML
     void FeedbackOnaction(ActionEvent actionEvent) {
 
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nipa/FeedbackView.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("FeedBack");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+
     }
 
     @FXML

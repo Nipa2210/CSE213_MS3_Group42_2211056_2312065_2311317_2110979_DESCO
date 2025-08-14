@@ -1,12 +1,24 @@
 <component name="ProjectDictionaryState">
   <dictionary name="project">
     <words>
+      <w>backto</w>
+      <w>billamount</w>
+      <w>billingmonth</w>
+      <w>customername</w>
+      <w>duedate</w>
       <w>eusage</w>
       <w>labeltextfield</w>
       <w>loginpage</w>
       <w>logintextfield</w>
+      <w>meternumber</w>
       <w>onaction</w>
+      <w>paybill</w>
       <w>payhistory</w>
+      <w>pbill</w>
+      <w>phistory</w>
+      <w>sakira</w>
+      <w>unitsconsumed</w>
+      <w>usagetobe</w>
     </words>
   </dictionary>
 </component>
