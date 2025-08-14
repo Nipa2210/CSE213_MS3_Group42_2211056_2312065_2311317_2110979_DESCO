@@ -1,27 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Nipa2211056.FeedbackView">
-   <children>
-      <TableView fx:id="FeedBackTableview" layoutX="74.0" layoutY="100.0" prefHeight="200.0" prefWidth="582.0">
-        <columns>
-          <TableColumn fx:id="CustomerNameColumn" prefWidth="117.60004425048828" text="Customer Name" />
-          <TableColumn fx:id="MeterNumberColumn" prefWidth="175.199951171875" text="Meter Number" />
-            <TableColumn fx:id="CustomerMessageColumn" prefWidth="156.79995727539062" text="Customer Message" />
-            <TableColumn fx:id="DateColumn" prefWidth="132.00006103515625" text="Date" />
-        </columns>
-      </TableView>
-      <Label alignment="CENTER" layoutX="177.0" layoutY="39.0" prefHeight="18.0" prefWidth="334.0" style="-fx-background-color: Sky Blue;" text="View FeedBack">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
-      <Button layoutX="557.0" layoutY="333.0" mnemonicParsing="false" onAction="#ViewOnaction" prefHeight="26.0" prefWidth="96.0" text="View" />
-   </children>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Nipa2211056.FeedbackView">
+
 </AnchorPane>

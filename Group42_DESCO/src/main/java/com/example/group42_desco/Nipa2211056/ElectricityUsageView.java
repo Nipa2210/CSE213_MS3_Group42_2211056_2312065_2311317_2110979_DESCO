@@ -52,16 +52,28 @@ public class ElectricityUsageView {
     public void AddOnaction(ActionEvent actionEvent) {
         if (BillingMonthTextfield.getText().isEmpty() ||
                 CostTextfield.getText().isEmpty() ||
-                UnitsConsumedTextfield.getText().isEmpty()
-        );
-        warningLabel.setText("Error");
-        this.warningLabel.setStyle("-fx-border-color: Red");
+                UnitsConsumedTextfield.getText().isEmpty()){
+            warningLabel.setText("Error");
+            this.warningLabel.setStyle("-fx-border-color: Red");
 
-        EUsage usagetobeAdded = new EUsage(this.BillingMonthTextfield.getText(),Double.parseDouble(this.CostTextfield.getText()),Integer.parseInt(this.UnitsConsumedTextfield.getText()));
-        this.EUsageList.add(usagetobeAdded);
-        this.ElecUsageTableView.getItems().add(usagetobeAdded);
-        this.warningLabel.setText("EUsage Added Successfully");
-        this.warningLabel.setStyle("-fx-border-color: Green");
+        }
+        else{
+            EUsage usagetobeAdded = new EUsage(this.BillingMonthTextfield.getText(),Double.parseDouble(this.CostTextfield.getText()),Integer.parseInt(this.UnitsConsumedTextfield.getText()));
+            this.EUsageList.add(usagetobeAdded);
+            this.ElecUsageTableView.getItems().add(usagetobeAdded);
+            this.warningLabel.setText("EUsage Added Successfully");
+            this.warningLabel.setStyle("-fx-border-color: Green");
+
+        }
+        BillingMonthTextfield.clear();
+        CostTextfield.clear();
+        UnitsConsumedTextfield.clear();
+
+//        EUsage usagetobeAdded = new EUsage(this.BillingMonthTextfield.getText(),Double.parseDouble(this.CostTextfield.getText()),Integer.parseInt(this.UnitsConsumedTextfield.getText()));
+//        this.EUsageList.add(usagetobeAdded);
+//        this.ElecUsageTableView.getItems().add(usagetobeAdded);
+//        this.warningLabel.setText("EUsage Added Successfully");
+//        this.warningLabel.setStyle("-fx-border-color: Green");
 
     }
 }

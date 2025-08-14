@@ -30,6 +30,6 @@
       <TextField fx:id="UnitsConsumedTextfield" layoutX="187.0" layoutY="147.0" />
       <TextField fx:id="CostTextfield" layoutX="604.0" layoutY="106.0" />
       <Button layoutX="385.0" layoutY="209.0" mnemonicParsing="false" onAction="#AddOnaction" prefHeight="26.0" prefWidth="86.0" text="Add" />
-      <Label fx:id="warningLabel" layoutX="612.0" layoutY="181.0" prefHeight="18.0" prefWidth="118.0" />
+      <Label fx:id="warningLabel" layoutX="612.0" layoutY="181.0" prefHeight="18.0" prefWidth="150.0" />
    </children>
 </AnchorPane>

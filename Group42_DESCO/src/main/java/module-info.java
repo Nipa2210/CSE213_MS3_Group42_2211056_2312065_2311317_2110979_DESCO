@@ -1,6 +1,7 @@
 module com.example.group42_desco {
     requires javafx.controls;
     requires javafx.fxml;
+    requires jdk.javadoc;
 
 
     opens com.example.group42_desco to javafx.fxml;
