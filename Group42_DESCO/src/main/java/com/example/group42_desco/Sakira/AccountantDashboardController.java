@@ -76,7 +76,7 @@ public class AccountantDashboardController
     @javafx.fxml.FXML
     public void GenerateSalarySheetOA(ActionEvent actionEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/Generate_Salary_Sheet.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/GenerateSalarySheet.fxml"));
             Scene nextScene = new Scene(fxmlLoader.load());
             Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
             nextStage.setTitle("Generate Salary Sheet");
@@ -90,7 +90,7 @@ public class AccountantDashboardController
     @javafx.fxml.FXML
     public void TrackandReportElectricityRevOA(ActionEvent actionEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/Track&ReportElectricityRev.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/TrackReportElectricityRev.fxml"));
             Scene nextScene = new Scene(fxmlLoader.load());
             Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
             nextStage.setTitle("Track & Report Electricity Rev");

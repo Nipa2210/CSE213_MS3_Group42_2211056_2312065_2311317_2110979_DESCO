@@ -26,8 +26,6 @@ public class CreateBudgetController
     @javafx.fxml.FXML
     private TableColumn<CreateBudget , Integer> FiscalYearTC;
     @javafx.fxml.FXML
-    private Label SendForApprovalLabel;
-    @javafx.fxml.FXML
     private TextField TotalBudgetTF;
 
     @javafx.fxml.FXML

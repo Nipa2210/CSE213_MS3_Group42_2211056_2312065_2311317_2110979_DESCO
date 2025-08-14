@@ -21,7 +21,7 @@
       <Button layoutX="468.0" layoutY="360.0" mnemonicParsing="false" onAction="#ViewOA" text="View" />
       <Button layoutX="522.0" layoutY="360.0" mnemonicParsing="false" onAction="#PreviousOA" text="Previous" />
       <ComboBox fx:id="BillingPeriodCB" layoutX="14.0" layoutY="38.0" prefWidth="150.0" promptText="Billing Period" />
-      <TableView fx:id="TrackandReportElectricityRevTV" layoutX="40.0" layoutY="140.0" prefHeight="200.0" prefWidth="451.0">
+      <TableView fx:id="TrackReportElectricityRevTV" layoutX="40.0" layoutY="140.0" prefHeight="200.0" prefWidth="451.0">
         <columns>
           <TableColumn fx:id="BillingPeriodTC" prefWidth="96.0" text="Billing Period" />
           <TableColumn fx:id="ZoneTC" prefWidth="67.0" text="Zone " />

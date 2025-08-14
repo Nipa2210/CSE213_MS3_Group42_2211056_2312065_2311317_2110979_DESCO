@@ -5,34 +5,42 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+
+import static com.example.group42_desco.Sakira.GenerateSalarySheet.SalarySheetList;
 
 public class GenerateSalarySheetController
 {
     @javafx.fxml.FXML
-    private TableColumn GenerateSalarySheetTC;
+    private TableColumn<GenerateSalarySheet, String> MonthTC;
     @javafx.fxml.FXML
-    private TableColumn MonthTC;
+    private ComboBox<String> DepartmentCB;
     @javafx.fxml.FXML
-    private ComboBox DepartmentCB;
+    private TableColumn<GenerateSalarySheet, String> DepartmentTC;
     @javafx.fxml.FXML
-    private TableColumn DepartmentTC;
+    private TableView<GenerateSalarySheet> GenerateSalarySheetTV;
     @javafx.fxml.FXML
-    private ComboBox PaymentTypeCB;
+    private ComboBox<String> MonthComboBox;
     @javafx.fxml.FXML
-    private TableColumn PaymentTypeTC;
+    private TextField NetSalaryTF;
     @javafx.fxml.FXML
-    private TableView GenerateSalarySheetTV;
+    private TableColumn<GenerateSalarySheet, String> EmployeeIDTC;
     @javafx.fxml.FXML
-    private ComboBox MonthComboBox;
+    private TextField EmployeeIDTF;
     @javafx.fxml.FXML
-    private TableColumn PaymentTypeTC1;
+    private TableColumn<GenerateSalarySheet, String> NetSalaryTC;
 
     @javafx.fxml.FXML
     public void initialize() {
+        MonthComboBox.getItems().addAll("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+        DepartmentCB.getItems().addAll("Administration", "Engineering", "Finance and Accounts", "Procurement", "Operations");
+
+        EmployeeIDTC.setCellValueFactory(new PropertyValueFactory<GenerateSalarySheet , String>("EmployeeID"));
+        MonthTC.setCellValueFactory(new PropertyValueFactory<GenerateSalarySheet , String>("Month"));
+        DepartmentTC.setCellValueFactory(new PropertyValueFactory<GenerateSalarySheet , String>("Department"));
+        NetSalaryTC.setCellValueFactory(new PropertyValueFactory<GenerateSalarySheet , String>("NetSalary"));
     }
 
 
@@ -53,6 +61,24 @@ public class GenerateSalarySheetController
 
     @javafx.fxml.FXML
     public void GenerateSalarySheetOA(ActionEvent actionEvent) {
+        if (EmployeeIDTF.getText().isEmpty() || MonthComboBox.getValue() == null || DepartmentCB.getValue() == null || NetSalaryTF.getText().isEmpty()) {
+            Alert errorAlert = new Alert(Alert.AlertType.INFORMATION);
+            errorAlert.setTitle("Input Error");
+            errorAlert.setHeaderText(null);
+            errorAlert.setContentText("Please ensure all fields are filled out correctly.");
+            errorAlert.show();
+            return;
+        }
+
+        GenerateSalarySheet g = new GenerateSalarySheet(
+                EmployeeIDTF.getText(),
+                MonthComboBox.getValue(),
+                DepartmentCB.getValue(),
+                Integer.parseInt(NetSalaryTF.getText()));
+
+        SalarySheetList.add(g);
+        GenerateSalarySheetTV.getItems().add(g);
+        GenerateSalarySheetTV.refresh();
     }
 
 

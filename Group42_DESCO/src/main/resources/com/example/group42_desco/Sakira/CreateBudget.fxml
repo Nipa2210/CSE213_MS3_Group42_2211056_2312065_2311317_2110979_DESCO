@@ -22,7 +22,7 @@
         <columns>
           <TableColumn fx:id="FiscalYearTC" prefWidth="112.0" text="Fiscal year" />
           <TableColumn fx:id="DepartmentTC" prefWidth="153.0" text="Department" />
-            <TableColumn fx:id="TotalBudgetTC" prefWidth="118.0" text="Total Budget " />
+            <TableColumn fx:id="TotalBudgetTC" prefWidth="118.0" text="Total Budget(Tk) " />
         </columns>
       </TableView>
       <Button layoutX="382.0" layoutY="123.0" mnemonicParsing="false" onAction="#ShowTotalBudgetSummaryOA" text="Show Total Budget Summary" />
