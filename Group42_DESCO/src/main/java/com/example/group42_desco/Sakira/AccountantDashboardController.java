@@ -19,7 +19,7 @@ public class AccountantDashboardController
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/MakePaymentsToSuppliers.fxml"));
             Scene nextScene = new Scene(fxmlLoader.load());
             Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
-            nextStage.setTitle("Make Payments To Suppliers bhfbd");
+            nextStage.setTitle("Make Payments To Suppliers");
             nextStage.setScene(nextScene);
             nextStage.show();
         } catch (Exception e) {
