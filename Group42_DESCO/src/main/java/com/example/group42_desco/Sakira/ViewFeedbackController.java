@@ -6,29 +6,28 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 public class ViewFeedbackController
 {
     @javafx.fxml.FXML
-    private TableColumn CustomerNameTC;
+    private TableColumn<ViewFeedback , String> CustomerNameTC;
     @javafx.fxml.FXML
-    private TableColumn CustomerContactTC;
+    private TableColumn<ViewFeedback , String> CustomerContactTC;
     @javafx.fxml.FXML
-    private TableColumn CustomerMessageTC;
+    private TableColumn<ViewFeedback , String> CustomerMessageTC;
     @javafx.fxml.FXML
-    private TableView ViewFeedBackTV;
+    private TableView<ViewFeedback > ViewFeedBackTV;
     @javafx.fxml.FXML
-    private TableColumn DateTC;
-    @javafx.fxml.FXML
-    private TextField CustomerNameTF;
-    @javafx.fxml.FXML
-    private TextField CustomerContactTF;
-    @javafx.fxml.FXML
-    private DatePicker DateDP;
+    private TableColumn<ViewFeedback , String> DateTC;
 
     @javafx.fxml.FXML
     public void initialize() {
+        CustomerNameTC.setCellValueFactory(new PropertyValueFactory<ViewFeedback , String>("CustomerName"));
+        CustomerContactTC.setCellValueFactory(new PropertyValueFactory<ViewFeedback , String>("CustomerContact"));
+        CustomerMessageTC.setCellValueFactory(new PropertyValueFactory<ViewFeedback , String>("CustomerMessage"));
+        DateTC.setCellValueFactory(new PropertyValueFactory<ViewFeedback , String>("Date"));
     }
 
 
@@ -47,11 +46,5 @@ public class ViewFeedbackController
         }
     }
 
-    @javafx.fxml.FXML
-    public void ViewOA(ActionEvent actionEvent) {
-    }
 
-    @javafx.fxml.FXML
-    public void CustomerMessageOA(ActionEvent actionEvent) {
-    }
 }

@@ -9,38 +9,32 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
-import static com.example.group42_desco.Sakira.CreateBudget.BudgetList;
+
 import static com.example.group42_desco.Sakira.ViewSalarySheet1.SalarySheetList;
 
 public class ViewSalarySheet1Controller
 {
     @javafx.fxml.FXML
-    private TableColumn<ViewSalarySheet1 , String> MonthTC;
+    private TableView<ViewSalarySheet1> ViewSalarySheetTV;
     @javafx.fxml.FXML
-    private ComboBox<String> MonthCB;
+    private TableColumn<ViewSalarySheet1 , String> MonthTC2;
     @javafx.fxml.FXML
-    private TableColumn<ViewSalarySheet1 , String> NetSalaryTC;
+    private TableColumn<ViewSalarySheet1 , String> NetSalaryTC2;
     @javafx.fxml.FXML
-    private TableColumn<ViewSalarySheet1 , String> DepartmentTC;
+    private TableColumn<ViewSalarySheet1 , String> EmployeeIDTC2;
     @javafx.fxml.FXML
-    private ComboBox<String> DepartmentCB;
-    @javafx.fxml.FXML
-    private TextField NetSalaryTF;
-    @javafx.fxml.FXML
-    private TableView<ViewSalarySheet1> SalarySheetTV;
-    @javafx.fxml.FXML
-    private TextField EmployeeIDTF;
-    @javafx.fxml.FXML
-    private TableColumn<ViewSalarySheet1 , String> EmployeeIDTC;
+    private TableColumn<ViewSalarySheet1 , String> DepartmentTC2;
 
     @javafx.fxml.FXML
     public void initialize() {
-        MonthCB.getItems().addAll("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-        DepartmentCB.getItems().addAll("Administration", "Engineering", "Finance and Accounts", "Procurement", "Operations");
 
-        EmployeeIDTC.setCellValueFactory(new PropertyValueFactory<ViewSalarySheet1 , String>("EmployeeID"));
-        MonthTC.setCellValueFactory(new PropertyValueFactory<ViewSalarySheet1 , String>("Month"));
-        DepartmentTC.setCellValueFactory(new PropertyValueFactory<ViewSalarySheet1 , String>("Department"));
+
+        EmployeeIDTC2.setCellValueFactory(new PropertyValueFactory<ViewSalarySheet1 , String>("EmployeeID"));
+        MonthTC2.setCellValueFactory(new PropertyValueFactory<ViewSalarySheet1 , String>("Month"));
+        DepartmentTC2.setCellValueFactory(new PropertyValueFactory<ViewSalarySheet1 , String>("Department"));
+        NetSalaryTC2.setCellValueFactory(new PropertyValueFactory<ViewSalarySheet1 , String>("NetSalary"));
+
+        ViewSalarySheetTV.getItems().addAll(SalarySheetList);
     }
 
     @javafx.fxml.FXML
@@ -59,27 +53,7 @@ public class ViewSalarySheet1Controller
 
     @javafx.fxml.FXML
     public void ViewOA(ActionEvent actionEvent) {
-        if (EmployeeIDTF.getText().isEmpty() || MonthCB.getValue() == null || DepartmentCB.getValue() == null || NetSalaryTF.getText().isEmpty()) {
 
-                Alert errorAlert = new Alert(Alert.AlertType.INFORMATION);
-                errorAlert.setTitle("Input Error");
-                errorAlert.setHeaderText(null); // No header
-                errorAlert.setContentText("Please ensure all fields are filled out correctly.");
-                errorAlert.showAndWait();
-                return;
-        }
-
-        ViewSalarySheet1 b = new ViewSalarySheet1(
-                EmployeeIDTF.getText(),
-                MonthCB.getValue(),
-                DepartmentCB.getValue(),
-                Integer.parseInt(NetSalaryTF.getText())
-
-        );
-
-        SalarySheetList.add(b);
-        SalarySheetTV.getItems().add(b);
-        SalarySheetTV.refresh();
 
 
     }

@@ -135,7 +135,7 @@ public class MDDashBoardController
     @javafx.fxml.FXML
     public void ViewSalarySheetOnAction(ActionEvent actionEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/ViewSalarySheet.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/ViewSalarySheet1.fxml"));
             Scene nextScene = new Scene(fxmlLoader.load());
             Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
             nextStage.setTitle("View Salary Sheet");

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -26,15 +24,7 @@
                   <TableColumn fx:id="DateTC" prefWidth="118.0" text="Date" />
                </columns>
             </TableView>
-            <Button layoutX="542.0" layoutY="330.0" mnemonicParsing="false" onAction="#ViewOA" text="View" />
             <Button layoutX="14.0" layoutY="356.0" mnemonicParsing="false" onAction="#PreviousOA" text="Previous" />
-            <Label layoutX="25.0" layoutY="49.0" text="Customer Name :" />
-            <Label layoutX="25.0" layoutY="82.0" text="Customer Contact :" />
-            <Label layoutX="328.0" layoutY="374.0" prefHeight="17.0" prefWidth="187.0" text="Label" />
-            <Button layoutX="179.0" layoutY="369.0" mnemonicParsing="false" onAction="#CustomerMessageOA" text="Customer Message " />
-            <TextField fx:id="CustomerNameTF" layoutX="137.0" layoutY="44.0" />
-            <TextField fx:id="CustomerContactTF" layoutX="137.0" layoutY="77.0" />
-            <DatePicker fx:id="DateDP" layoutX="351.0" layoutY="36.0" promptText="Date" />
          </children>
       </AnchorPane>
    </children>
