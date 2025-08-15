@@ -17,26 +17,23 @@
                   <Font name="System Bold Italic" size="20.0" />
                </font>
             </Label>
-            <TextField fx:id="SupplierIDTF" layoutX="124.0" layoutY="55.0" />
+            <TextField fx:id="SupplierIDTF" layoutX="101.0" layoutY="56.0" />
             <TableView fx:id="ViewSupplierProfileTV" layoutX="14.0" layoutY="145.0" prefHeight="200.0" prefWidth="583.0">
                <columns>
-                  <TableColumn fx:id="SupplierIDTC" prefWidth="97.0" text="Supplier ID" />
-                  <TableColumn fx:id="SupplierNameTC" prefWidth="105.0" text="Supplier Name" />
-                  <TableColumn fx:id="ContactInfoTC" prefWidth="109.0" text="Contact Info" />
-                  <TableColumn fx:id="PastTransactionTC" prefWidth="106.0" text="Past Transactions" />
-                  <TableColumn fx:id="PaymentStatusTC" prefWidth="165.0" text="Payment Status" />
+                  <TableColumn fx:id="SupplierIDTC" prefWidth="118.0" text="Supplier ID" />
+                  <TableColumn fx:id="TransectionIDTC" prefWidth="134.0" text="Transection ID" />
+                  <TableColumn fx:id="ContactInfoTC" prefWidth="116.0" text="Contact Info" />
+                  <TableColumn fx:id="PaymentStatusTC" prefWidth="214.0" text="Payment Status" />
                </columns>
             </TableView>
             <Button layoutX="516.0" layoutY="355.0" mnemonicParsing="false" onAction="#PreviousOA" text="Previous" />
-            <Label layoutX="43.0" layoutY="60.0" text="Supplier ID :" />
-            <Label layoutX="33.0" layoutY="96.0" text="Supplier Name :" />
+            <Label layoutX="20.0" layoutY="60.0" text="Supplier ID :" />
             <Label layoutX="322.0" layoutY="52.0" text="Contact Info :" />
-            <Label layoutX="307.0" layoutY="84.0" text="Past Transections :" />
-            <Label layoutX="312.0" layoutY="110.0" text="Payment Status :" />
+            <Label layoutX="20.0" layoutY="97.0" text=" Transection  ID :" />
+            <Label layoutX="312.0" layoutY="97.0" text="Payment Status :" />
             <TextField fx:id="ContactInfoTF" layoutX="402.0" layoutY="48.0" />
-            <TextField fx:id="SupplierNameTF" layoutX="124.0" layoutY="92.0" />
-            <TextField fx:id="PastTransectionsTF" layoutX="414.0" layoutY="79.0" />
-            <TextField fx:id="PaymentStatusTF" layoutX="414.0" layoutY="106.0" />
+            <TextField fx:id="TransectionIDTF" layoutX="118.0" layoutY="93.0" />
+            <TextField fx:id="PaymentStatusTF" layoutX="413.0" layoutY="93.0" />
             <Button layoutX="21.0" layoutY="356.0" mnemonicParsing="false" onAction="#ViewOA" text="View" />
          </children>
       </AnchorPane>

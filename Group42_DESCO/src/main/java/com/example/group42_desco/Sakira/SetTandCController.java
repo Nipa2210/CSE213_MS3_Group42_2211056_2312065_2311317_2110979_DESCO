@@ -16,14 +16,15 @@ public class SetTandCController
     @javafx.fxml.FXML
     private Label EditOrAddNewTermsLabel;
     @javafx.fxml.FXML
-    private ComboBox SelectsEmployeeCategoryCB;
+    private ComboBox<String> SelectsEmployeeCategoryCB;
     @javafx.fxml.FXML
-    private TextField TermsandConditionsTF;
+    private TextField TermsAndConditionsTF;
     @javafx.fxml.FXML
     private TextArea SetUpTandCTextArea;
 
     @javafx.fxml.FXML
     public void initialize() {
+        SelectsEmployeeCategoryCB.getItems().addAll("Permanent", "Contractual", "Admin", "Technical");
     }
 
 
@@ -49,5 +50,8 @@ public class SetTandCController
 
     @javafx.fxml.FXML
     public void ShowOA(ActionEvent actionEvent) {
+        if (TermsAndConditionsTF == null || TermsAndConditionsTF.getText().isEmpty()){
+
+        }
     }
 }
