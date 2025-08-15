@@ -10,26 +10,22 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Sakira.MakePaymentsToSuppliersController">
+<AnchorPane fx:id="SupplierIDTextField" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Sakira.MakePaymentsToSuppliersController">
    <children>
       <Label layoutX="189.0" layoutY="14.0" prefHeight="26.0" prefWidth="246.0" text="Make Payments To Suppliers">
          <font>
             <Font name="System Bold Italic" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="60.0" prefHeight="17.0" prefWidth="107.0" text="Search and Select :" />
-      <TextField fx:id="SuppliersToBePaidTF" layoutX="125.0" layoutY="56.0" promptText="Supplier to be paid" />
-      <Button layoutX="383.0" layoutY="352.0" mnemonicParsing="false" onAction="#InvoiceForPaymentOA" text="Invoice For Payment " />
       <ComboBox fx:id="ChoosePaymentMethodCB" layoutX="323.0" layoutY="55.0" prefHeight="26.0" prefWidth="190.0" promptText="Choose Payment method:" />
       <Button layoutX="465.0" layoutY="157.0" mnemonicParsing="false" onAction="#ConfirmPaymentOA" text="Confirm Payment" />
-      <Label fx:id="SendMailLabel" layoutX="89.0" layoutY="356.0" prefHeight="17.0" prefWidth="231.0" />
-      <Button layoutX="6.0" layoutY="352.0" mnemonicParsing="false" onAction="#SendMailOA" text="Send Mail" />
-      <TableView fx:id="MakePaymentsToSuppliersTV" layoutX="48.0" layoutY="192.0" prefHeight="141.0" prefWidth="482.0">
+      <TableView fx:id="MakePaymentsToSuppliersTV" layoutX="17.0" layoutY="200.0" prefHeight="141.0" prefWidth="578.0">
         <columns>
           <TableColumn fx:id="AmountTC" prefWidth="107.0" text="Amount " />
           <TableColumn fx:id="DateTC" prefWidth="94.0" text="Date " />
             <TableColumn fx:id="ReferenceNumberTC" prefWidth="132.0" text="Reference Number" />
             <TableColumn fx:id="PaymentMethodTC" prefWidth="148.0" text="Payment Method" />
+            <TableColumn fx:id="SupplierIDTC" prefWidth="107.0" text="Supplier ID" />
         </columns>
       </TableView>
       <Button layoutX="521.0" layoutY="353.0" mnemonicParsing="false" onAction="#PreviousOA" text="Previous" />
@@ -38,5 +34,7 @@
       <DatePicker fx:id="DateDP" layoutX="325.0" layoutY="101.0" promptText="Date" />
       <Label layoutX="13.0" layoutY="138.0" text="Reference Number :" />
       <TextField fx:id="ReferenceNumberTF" layoutX="129.0" layoutY="134.0" />
+      <Label layoutX="18.0" layoutY="47.0" text="Supplier ID:" />
+      <TextField fx:id="SupplierIDTF" layoutX="89.0" layoutY="43.0" />
    </children>
 </AnchorPane>

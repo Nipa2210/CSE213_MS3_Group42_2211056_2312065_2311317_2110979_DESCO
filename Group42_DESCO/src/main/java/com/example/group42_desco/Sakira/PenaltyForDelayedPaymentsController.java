@@ -5,22 +5,23 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+
+import static com.example.group42_desco.Sakira.CreateBudget.BudgetList;
+import static com.example.group42_desco.Sakira.PenaltyForDelayedPayments.PaymentsList;
 
 public class PenaltyForDelayedPaymentsController
 {
     @javafx.fxml.FXML
-    private TableColumn UpdatedTotalElectricityBillTC;
+    private TableColumn<PenaltyForDelayedPayments , String> UpdatedTotalElectricityBillTC;
     @javafx.fxml.FXML
-    private TableColumn AddedChargeTC;
+    private TableColumn<PenaltyForDelayedPayments , String> AddedChargeTC;
     @javafx.fxml.FXML
-    private TableView PenaltyForDelayedElectricityPaymentsTV;
+    private TableView<PenaltyForDelayedPayments> PenaltyForDelayedElectricityPaymentsTV;
     @javafx.fxml.FXML
-    private TableColumn PreviousBillTC;
+    private TableColumn<PenaltyForDelayedPayments , String> PreviousBillTC;
     @javafx.fxml.FXML
     private TextField AddedChargeTF;
     @javafx.fxml.FXML
@@ -30,10 +31,31 @@ public class PenaltyForDelayedPaymentsController
 
     @javafx.fxml.FXML
     public void initialize() {
+        PreviousBillTC.setCellValueFactory(new PropertyValueFactory<PenaltyForDelayedPayments , String>("PreviousBill"));
+        AddedChargeTC.setCellValueFactory(new PropertyValueFactory<PenaltyForDelayedPayments , String>("AddedCharge"));
+        UpdatedTotalElectricityBillTC.setCellValueFactory(new PropertyValueFactory<PenaltyForDelayedPayments , String>("UpdatedTotalElectricityBill"));
     }
 
     @javafx.fxml.FXML
     public void UpdateBillOA(ActionEvent actionEvent) {
+        if (PreviousBillTF.getText().isEmpty() || AddedChargeTF.getText().isEmpty() || UpdatedTotalElectricityBillTF.getText().isEmpty()) {
+            Alert errorAlert = new Alert(Alert.AlertType.INFORMATION);
+            errorAlert.setTitle("Input Error");
+            errorAlert.setHeaderText(null); // No header
+            errorAlert.setContentText("Please ensure all fields are filled out correctly.");
+            errorAlert.showAndWait();
+            return;
+        }
+
+        PenaltyForDelayedPayments d = new PenaltyForDelayedPayments(
+                Integer.parseInt(PreviousBillTF.getText()),
+                Integer.parseInt(AddedChargeTF.getText()),
+                Integer.parseInt(UpdatedTotalElectricityBillTF.getText())
+        );
+
+        PaymentsList.add(d);
+        PenaltyForDelayedElectricityPaymentsTV.getItems().add(d);
+        PenaltyForDelayedElectricityPaymentsTV.refresh();
     }
 
     @javafx.fxml.FXML
