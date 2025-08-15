@@ -28,7 +28,7 @@ public class MDDashBoardController
 
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void SetUpTandCOA(ActionEvent actionEvent) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/SetTandC.fxml"));
@@ -143,6 +143,21 @@ public class MDDashBoardController
             nextStage.show();
         } catch (Exception e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void SetTandCOA(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/SetTandC.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("SetTandC");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+
         }
     }
 }

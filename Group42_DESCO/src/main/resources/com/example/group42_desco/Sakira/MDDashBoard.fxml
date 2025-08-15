@@ -19,7 +19,7 @@
             <Button layoutX="389.0" layoutY="106.0" mnemonicParsing="false" onAction="#ApprovalOfSalarySheetOA" text="Approval of Salary Sheet" />
             <Button layoutX="42.0" layoutY="158.0" mnemonicParsing="false" onAction="#ViewCustomerProfileOA" text="View Customer Profile" />
             <Button layoutX="236.0" layoutY="158.0" mnemonicParsing="false" onAction="#ViewSupplierProfileOA" text="View Supplier Profile" />
-            <Button layoutX="400.0" layoutY="158.0" mnemonicParsing="false" onAction="#SetUpTandCOA" text="Set Up T&amp;C" />
+            <Button layoutX="400.0" layoutY="158.0" mnemonicParsing="false" onAction="#SetTandCOA" text="Set TandC" />
             <Button layoutX="130.0" layoutY="228.0" mnemonicParsing="false" onAction="#ViewElectricityStorageOA" text="View Electricity Storage" />
             <Button layoutX="350.0" layoutY="228.0" mnemonicParsing="false" onAction="#ViewFeedbackOA" text="View Feedback" />
             <Button layoutX="478.0" layoutY="301.0" mnemonicParsing="false" onAction="#LogOutOA" text="Log Out" />

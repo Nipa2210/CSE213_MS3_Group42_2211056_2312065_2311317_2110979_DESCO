@@ -22,7 +22,7 @@
             <Button layoutX="476.0" layoutY="314.0" mnemonicParsing="false" onAction="#PreviousOA" text="Previous" />
             <Button layoutX="36.0" layoutY="328.0" mnemonicParsing="false" onAction="#ShowOA" text="Show" />
             <TextArea fx:id="SetUpTandCTextArea" layoutX="376.0" layoutY="33.0" prefHeight="200.0" prefWidth="200.0" />
-            <TextField fx:id="TermsandConditionsTF" layoutX="160.0" layoutY="192.0" />
+            <TextField fx:id="TermsAndConditionsTF" layoutX="160.0" layoutY="192.0" />
          </children>
       </AnchorPane>
    </children>

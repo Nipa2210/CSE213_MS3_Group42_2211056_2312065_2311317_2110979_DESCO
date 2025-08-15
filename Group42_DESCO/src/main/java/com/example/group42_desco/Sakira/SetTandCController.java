@@ -5,10 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 public class SetTandCController
@@ -50,8 +47,20 @@ public class SetTandCController
 
     @javafx.fxml.FXML
     public void ShowOA(ActionEvent actionEvent) {
+        SetUpTandCTextArea.getText();
         if (TermsAndConditionsTF == null || TermsAndConditionsTF.getText().isEmpty()){
+            SetUpTandCTextArea.setText("New Terms and Conditions");
+
+            Alert errorAlert = new Alert(Alert.AlertType.INFORMATION);
+            errorAlert.setTitle("Input Error");
+            errorAlert.setHeaderText(null); // No header
+            errorAlert.setContentText("Please ensure all fields are filled out correctly.");
+            errorAlert.show();
+            return;
+
 
         }
+
+
     }
 }
