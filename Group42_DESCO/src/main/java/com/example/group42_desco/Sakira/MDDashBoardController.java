@@ -77,7 +77,7 @@ public class MDDashBoardController
     @javafx.fxml.FXML
     public void ViewElectricityStorageOA(ActionEvent actionEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/View_Electricity_Storage.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/ViewElectricityStorage.fxml"));
             Scene nextScene = new Scene(fxmlLoader.load());
             Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
             nextStage.setTitle("View Electricity Storage");
