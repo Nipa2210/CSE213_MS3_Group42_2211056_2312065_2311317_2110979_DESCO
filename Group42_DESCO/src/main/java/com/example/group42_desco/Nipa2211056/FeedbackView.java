@@ -39,7 +39,7 @@ public class FeedbackView {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/View_Feedback.fxml"));
             Scene nextScene = new Scene(fxmlLoader.load());
             Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-            nextStage.setTitle("Payment History");
+            nextStage.setTitle("Feed Back");
             nextStage.setScene(nextScene);
             nextStage.show();
         } catch (Exception e) {

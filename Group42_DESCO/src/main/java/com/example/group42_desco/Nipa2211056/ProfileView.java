@@ -1,9 +1,17 @@
 package com.example.group42_desco.Nipa2211056;
 
+import javafx.beans.Observable;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class ProfileView {
 
@@ -11,7 +19,7 @@ public class ProfileView {
     private TextField Addresstextfield;
 
     @FXML
-    private ComboBox<?> ConnectionTypeCombobox;
+    private ComboBox<String> ConnectionTypeCombobox;
 
     @FXML
     private TextField MNtextfield;
@@ -20,8 +28,19 @@ public class ProfileView {
     private TextField Nametextfield;
 
     @FXML
-    void BackOnaction(ActionEvent event) {
+    void BackOnaction(ActionEvent actionEvent) {
 
+    }
+    //ObservableList<CustomerProfile> CprofileList = FXCollections.observableArrayList();
+    ArrayList<CustomerProfile> customerList;
+
+    @FXML
+    public void initialize(){
+        customerList = new ArrayList<CustomerProfile>();
+        ConnectionTypeCombobox.getItems().addAll("Residential","Commercial");
+//        CprofileList.add(new CustomerProfile("Nipa", "Narayangonj", "12345", ""));
+//        ConnectionTypeCombobox.getItems().addAll("Residential","Commercial");
+//        CprofileList.add((CustomerProfile) CprofileList);
     }
 
     @FXML
@@ -34,9 +53,44 @@ public class ProfileView {
 
     }
 
-    @FXML
+    @Deprecated
     void SaveOnaction(ActionEvent event) {
 
     }
 
+    @FXML
+    public void SavebinOnaction(ActionEvent actionEvent) {
+    }
+
+    @FXML
+    public void SavetxtOnaction(ActionEvent actionEvent) {
+
+        try{
+            File f = new File("CustomerInfo.txt");
+            FileWriter fw = null;
+            if(f.exists()){
+                fw = new FileWriter(f, true);
+            }
+            else{
+                fw = new FileWriter(f);
+            }
+
+            String str="";
+            for(CustomerProfile c: customerList){
+                str+= c.toString("For file writing");
+            }
+            fw.write(str);
+            fw.close();
+        }
+        catch(IOException e){
+            //
+        }
+//        customerList.add(new CustomerProfile(Nametextfield.getText(),
+//                Addresstextfield.getText(),
+//                ConnectionTypeCombobox.getValue(),
+//                MNtextfield.getText()));
+
+//        Nametextfield.clear();
+//        ConnectionTypeCombobox.clea;
+    }
 }

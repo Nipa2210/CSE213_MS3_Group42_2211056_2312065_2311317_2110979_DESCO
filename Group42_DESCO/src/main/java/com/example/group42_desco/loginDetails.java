@@ -1,9 +1,9 @@
 package com.example.group42_desco;
 
-public class LoginDetails {
+public class loginDetails {
     private String username, password;
 
-    public LoginDetails(String username, String password) {
+    public loginDetails(String username, String password) {
         this.username = username;
         this.password = password;
     }

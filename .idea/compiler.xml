@@ -10,4 +10,9 @@
       </profile>
     </annotationProcessing>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Group42_DESCO" options="--add-exports jdk.javadoc/jdk.javadoc.internal.doclets.toolkit.util=com.example.group42_desco --add-exports jdk.javadoc/jdk.javadoc.internal.doclets.formats.html.markup=com.example.group42_desco" />
+    </option>
+  </component>
 </project>
