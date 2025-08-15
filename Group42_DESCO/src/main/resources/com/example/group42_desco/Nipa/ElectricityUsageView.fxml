@@ -4,24 +4,32 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="454.0" prefWidth="683.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Nipa2211056.ElectricityUsageView">
+<AnchorPane prefHeight="532.0" prefWidth="857.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Nipa2211056.ElectricityUsageView">
    <children>
-      <Label alignment="CENTER" layoutX="84.0" layoutY="54.0" prefHeight="32.0" prefWidth="514.0" style="-fx-border-color: black; -fx-background-color: skyblue;" text="Electricity Usage History">
+      <Label alignment="CENTER" layoutX="171.0" layoutY="28.0" prefHeight="32.0" prefWidth="514.0" style="-fx-border-color: black; -fx-background-color: skyblue;" text="Electricity Usage History">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TableView layoutX="72.0" layoutY="127.0" prefHeight="200.0" prefWidth="538.0">
+      <TableView fx:id="ElecUsageTableView" layoutX="127.0" layoutY="254.0" prefHeight="200.0" prefWidth="570.0">
         <columns>
-          <TableColumn fx:id="BillMonthColumn" prefWidth="158.40003204345703" text="Billing Month" />
-          <TableColumn fx:id="UnitsconsumedColumn" prefWidth="204.0" text="Units Consumed (KWH)" />
-            <TableColumn fx:id="CostColumn" prefWidth="175.99996948242188" text="Cost" />
+          <TableColumn fx:id="BillMonthColumn" prefWidth="171.1999969482422" text="Billing Month" />
+          <TableColumn fx:id="UnitsconsumedColumn" prefWidth="227.20001220703125" text="Units Consumed (KWH)" />
+            <TableColumn fx:id="CostColumn" prefWidth="172.00006103515625" text="Cost" />
         </columns>
       </TableView>
-      <Button layoutX="72.0" layoutY="371.0" mnemonicParsing="false" onAction="#backtoDashboardOnaction" prefHeight="26.0" prefWidth="118.0" text="Back to DashBoard" />
+      <Button layoutX="127.0" layoutY="478.0" mnemonicParsing="false" onAction="#backtoDashboardOnaction" prefHeight="26.0" prefWidth="118.0" text="Back to DashBoard" />
+      <Label layoutX="68.0" layoutY="109.0" prefHeight="18.0" prefWidth="105.0" text="Billing Month" />
+      <Label layoutX="68.0" layoutY="151.0" prefHeight="18.0" prefWidth="118.0" text="Units Consumed" />
+      <Label layoutX="551.0" layoutY="109.0" prefHeight="18.0" prefWidth="106.0" text="Cost" />
+      <TextField fx:id="BillingMonthTextfield" layoutX="187.0" layoutY="106.0" />
+      <TextField fx:id="UnitsConsumedTextfield" layoutX="187.0" layoutY="147.0" />
+      <TextField fx:id="CostTextfield" layoutX="604.0" layoutY="106.0" />
+      <Button layoutX="385.0" layoutY="209.0" mnemonicParsing="false" onAction="#AddOnaction" prefHeight="26.0" prefWidth="86.0" text="Add" />
+      <Label fx:id="warningLabel" layoutX="612.0" layoutY="181.0" prefHeight="18.0" prefWidth="150.0" />
    </children>
 </AnchorPane>

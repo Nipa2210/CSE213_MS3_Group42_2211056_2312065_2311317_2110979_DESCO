@@ -7,7 +7,6 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="474.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Nipa2211056.PayBillView">
    <children>
       <TableView fx:id="PayBillTableview" layoutX="161.0" layoutY="101.0" prefHeight="200.0" prefWidth="587.0">
