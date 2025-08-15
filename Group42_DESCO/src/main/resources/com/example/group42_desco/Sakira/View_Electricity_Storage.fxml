@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Sakira.ViewElectricityStorageController">
    <children>
@@ -18,19 +17,24 @@
                   <Font name="System Bold Italic" size="20.0" />
                </font>
             </Label>
-            <Button layoutX="38.0" layoutY="52.0" mnemonicParsing="false" onAction="#InventoryOA" text="Inventory " />
             <TableView fx:id="ViewElectricityStorageTV" layoutX="47.0" layoutY="174.0" prefHeight="178.0" prefWidth="487.0">
                <columns>
                   <TableColumn fx:id="ItemNameTC" prefWidth="107.0" text="Item Name" />
                   <TableColumn fx:id="QuantityTC" prefWidth="127.0" text="Quantity" />
                   <TableColumn fx:id="LocationTC" prefWidth="115.0" text="Location" />
-                  <TableColumn fx:id="StatusOA" prefWidth="137.0" text="Status" />
+                  <TableColumn fx:id="StatusTC" prefWidth="137.0" text="Status" />
                </columns>
             </TableView>
-            <ComboBox fx:id="FilterCB" layoutX="324.0" layoutY="52.0" prefWidth="150.0" promptText="Filter:" />
             <Button layoutX="351.0" layoutY="132.0" mnemonicParsing="false" onAction="#UpdatesandDisplaysFilteredResultsOA" text="Updates and Displays Filtered Results" />
-            <Button layoutX="46.0" layoutY="360.0" mnemonicParsing="false" onAction="#ExportOA" text="Export" />
             <Button layoutX="522.0" layoutY="360.0" mnemonicParsing="false" onAction="#PreviousOA" text="Previous" />
+            <Label layoutX="32.0" layoutY="55.0" text="Item Name :" />
+            <Label layoutX="32.0" layoutY="93.0" text="Quantity :" />
+            <Label layoutX="32.0" layoutY="124.0" text="Status :" />
+            <Label layoutX="336.0" layoutY="55.0" text="Location :" />
+            <TextField fx:id="ItemNameTF" layoutX="111.0" layoutY="51.0" />
+            <TextField fx:id="QuantityTF" layoutX="111.0" layoutY="89.0" />
+            <TextField fx:id="StatusTF" layoutX="111.0" layoutY="120.0" />
+            <TextField fx:id="LocationTF" layoutX="399.0" layoutY="51.0" />
          </children>
       </AnchorPane>
    </children>
