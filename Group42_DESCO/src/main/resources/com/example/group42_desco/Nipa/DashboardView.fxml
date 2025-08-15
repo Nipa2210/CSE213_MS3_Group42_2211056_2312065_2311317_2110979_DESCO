@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="477.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Nipa.DashboardView">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="487.0" prefWidth="178.0" style="-fx-background-color: pink;">
+         <children>
+            <Button layoutX="9.0" layoutY="184.0" mnemonicParsing="false" onAction="#CDOnaction" prefHeight="26.0" prefWidth="154.0" text="Customer Dashboard" />
+            <Button layoutX="9.0" layoutY="244.0" mnemonicParsing="false" onAction="#CSROnaction" prefHeight="26.0" prefWidth="154.0" text="CSR Dashboard" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="196.0" layoutY="321.0" prefHeight="43.0" prefWidth="154.0" text="Enter Customer ID:" />
+      <TextArea fx:id="CustomerIDTextfield" layoutX="361.0" layoutY="321.0" prefHeight="43.0" prefWidth="200.0" />
+      <Button layoutX="266.0" layoutY="408.0" mnemonicParsing="false" onAction="#ShowdetailsOnaction" prefHeight="26.0" prefWidth="389.0" text="Show Customer details on different Stage" />
+   </children>
+</AnchorPane>

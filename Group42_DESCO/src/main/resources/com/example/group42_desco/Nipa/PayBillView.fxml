@@ -5,31 +5,45 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="474.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Nipa2211056.PayBillView">
+<AnchorPane prefHeight="572.0" prefWidth="938.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Nipa2211056.PayBillView">
    <children>
-      <TableView fx:id="PayBillTableview" layoutX="161.0" layoutY="101.0" prefHeight="200.0" prefWidth="587.0">
+      <TableView fx:id="PayBillTableview" layoutX="161.0" layoutY="175.0" prefHeight="200.0" prefWidth="629.0">
         <columns>
           <TableColumn fx:id="CnameColumn" prefWidth="107.20001220703125" text="Customer Name" />
           <TableColumn fx:id="MeterNoColumn" prefWidth="95.199951171875" text="Meter Number" />
-            <TableColumn fx:id="BillingMonColumn" prefWidth="100.0" text="Billing Month" />
-            <TableColumn fx:id="DuedateColumn" prefWidth="87.19998168945312" text="Due Date" />
-            <TableColumn fx:id="BillAmountColumn" prefWidth="95.99993896484375" text="Bill Amount" />
-            <TableColumn fx:id="StatusColumn" prefWidth="102.39996337890625" text="Status" />
+            <TableColumn fx:id="BillingMonColumn" prefWidth="113.5999755859375" text="Billing Month" />
+            <TableColumn fx:id="DuedateColumn" prefWidth="92.00009155273438" text="Due Date" />
+            <TableColumn fx:id="BillAmountColumn" prefWidth="104.00006103515625" text="Bill Amount" />
+            <TableColumn fx:id="StatusColumn" prefWidth="116.79998779296875" text="Status" />
         </columns>
       </TableView>
-      <TextArea fx:id="Pstatustextarea" layoutX="282.0" layoutY="327.0" prefHeight="39.0" prefWidth="200.0" />
-      <TextArea fx:id="Pdatetextarea" layoutX="282.0" layoutY="388.0" prefHeight="37.0" prefWidth="200.0" />
-      <Label layoutX="164.0" layoutY="338.0" prefHeight="18.0" prefWidth="89.0" text="Payment Status" />
-      <Label layoutX="161.0" layoutY="390.0" prefHeight="18.0" prefWidth="89.0" text="Payment Date" />
-      <AnchorPane layoutX="-2.0" layoutY="-6.0" prefHeight="480.0" prefWidth="146.0" style="-fx-background-color: Skyblue;">
+      <TextArea fx:id="Pstatustextarea" layoutX="282.0" layoutY="410.0" prefHeight="39.0" prefWidth="200.0" />
+      <TextArea fx:id="Pdatetextarea" layoutX="282.0" layoutY="470.0" prefHeight="37.0" prefWidth="200.0" />
+      <Label layoutX="161.0" layoutY="420.0" prefHeight="18.0" prefWidth="89.0" text="Payment Status" />
+      <Label layoutX="161.0" layoutY="480.0" prefHeight="18.0" prefWidth="89.0" text="Payment Date" />
+      <AnchorPane layoutX="-2.0" layoutY="-6.0" prefHeight="578.0" prefWidth="146.0" style="-fx-background-color: Skyblue;">
          <children>
-            <Button layoutX="11.0" layoutY="115.0" mnemonicParsing="false" onAction="#PbillOnaction" prefHeight="26.0" prefWidth="126.0" text="Pay Bill" />
             <Button layoutX="12.0" layoutY="165.0" mnemonicParsing="false" onAction="#PhistoryOnaction" prefHeight="26.0" prefWidth="126.0" text="Payment History" />
             <Button layoutX="12.0" layoutY="205.0" mnemonicParsing="false" onAction="#BacktoDBOnaction" prefHeight="26.0" prefWidth="126.0" text="Back to Dash Board" />
          </children>
       </AnchorPane>
-      <Button layoutX="619.0" layoutY="334.0" mnemonicParsing="false" onAction="#makePaymentOnaction" prefHeight="26.0" prefWidth="102.0" text="Make Payment" />
+      <Button layoutX="645.0" layoutY="416.0" mnemonicParsing="false" onAction="#makePaymentOnaction" prefHeight="26.0" prefWidth="102.0" text="Make Payment" />
+      <Button layoutX="645.0" layoutY="457.0" mnemonicParsing="false" onAction="#VOnaction" prefHeight="26.0" prefWidth="102.0" text="View" />
+      <Label layoutX="161.0" layoutY="43.0" prefHeight="18.0" prefWidth="90.0" text="Customer Name" />
+      <Label layoutX="161.0" layoutY="81.0" prefHeight="18.0" prefWidth="126.0" text="Meter Number" />
+      <Label layoutX="482.0" layoutY="117.0" prefHeight="18.0" prefWidth="90.0" text="Status" />
+      <Label layoutX="482.0" layoutY="81.0" prefHeight="18.0" prefWidth="90.0" text="Bill Amount" />
+      <Label layoutX="482.0" layoutY="42.0" prefHeight="18.0" prefWidth="90.0" text="Due Date" />
+      <Label layoutX="161.0" layoutY="117.0" prefHeight="18.0" prefWidth="126.0" text="Billing Month" />
+      <TextField fx:id="CnameTextField" layoutX="263.0" layoutY="39.0" />
+      <TextField fx:id="MnumberTextField" layoutX="263.0" layoutY="77.0" />
+      <TextField fx:id="BmonthTextField" layoutX="263.0" layoutY="113.0" />
+      <TextField fx:id="DueDateTextField" layoutX="608.0" layoutY="39.0" />
+      <TextField fx:id="BillAmountTextField" layoutX="608.0" layoutY="77.0" />
+      <TextField fx:id="StatusTextField" layoutX="608.0" layoutY="113.0" />
+      <Label fx:id="warningLabel" layoutX="645.0" layoutY="509.0" prefHeight="39.0" prefWidth="178.0" />
    </children>
 </AnchorPane>

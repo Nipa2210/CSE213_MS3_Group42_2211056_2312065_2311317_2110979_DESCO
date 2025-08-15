@@ -73,6 +73,6 @@ public class PayBill {
                 '}';
     }
 
-    public String toString(String random) {return customername+","+meternumber+","+billingmonth+","+duedate+","+status+","+billingmonth+"\n";
-    }
+//    public String toString(String random) {return customername+","+meternumber+","+billingmonth+","+duedate+","+status+","+billingmonth+"\n";
+//    }
 }

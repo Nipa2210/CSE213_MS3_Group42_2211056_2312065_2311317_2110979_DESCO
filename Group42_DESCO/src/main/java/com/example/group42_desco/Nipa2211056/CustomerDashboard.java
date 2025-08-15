@@ -59,7 +59,7 @@ public class CustomerDashboard {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nipa/PayBillView.fxml"));
             Scene nextScene = new Scene(fxmlLoader.load());
             Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-            nextStage.setTitle("Pay our Bill");
+            nextStage.setTitle("Pay Bill");
             nextStage.setScene(nextScene);
             nextStage.show();
         } catch (Exception e) {

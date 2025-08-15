@@ -11,7 +11,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class loginController {
+public class LoginController {
 
     @FXML
     private TextField EnteryourNametextfield;
@@ -24,24 +24,22 @@ public class loginController {
 
     @FXML
     void EnterOnaction(ActionEvent actionEvent) {
-        if(EnteryourNametextfield.getText().isEmpty() || UserPasswordfield.getText().isEmpty()){
-        warningLabel.setText("Fill up the required fields");
-        warningLabel.setStyle("-fx-border-color: red");
-        Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-        errorAlert.setContentText("Fill up properly");
-        errorAlert.show();
-        }
 
-        else{
+        if (EnteryourNametextfield.getText().isEmpty() || UserPasswordfield.getText().isEmpty()) {
+            warningLabel.setText("Fill up the required fields");
+            warningLabel.setStyle("-fx-border-color: red");
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setContentText("Fill up properly");
+            errorAlert.show();
+        } else {
             warningLabel.setText("Login Successful!");
         }
-
 
 
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nipa/CustomerDashboard.fxml"));
             Scene nextScene = new Scene(fxmlLoader.load());
-            Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+            Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             nextStage.setTitle("Customer Dashboard");
             nextStage.setScene(nextScene);
             nextStage.show();
@@ -49,6 +47,8 @@ public class loginController {
             throw new RuntimeException(e);
 
         }
+
     }
+
 }
 
