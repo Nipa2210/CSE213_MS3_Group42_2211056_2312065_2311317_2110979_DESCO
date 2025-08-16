@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="550.0" prefWidth="600.0" style="-fx-background-color: lightyellow;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Nabiha.AddingPayrollOfaDesignationViewController">
+   <children>
+      <Label layoutX="22.0" layoutY="56.0" prefHeight="17.0" prefWidth="82.0" text="Designation" />
+      <Label layoutX="306.0" layoutY="56.0" prefHeight="17.0" prefWidth="52.0" text="salary:" />
+      <TableView fx:id="PayrollsTableView" layoutX="12.0" layoutY="222.0" prefHeight="308.0" prefWidth="577.0">
+        <columns>
+          <TableColumn fx:id="DesignationTableColumn" prefWidth="294.0" text="designation" />
+          <TableColumn fx:id="SalaryTableColumn" prefWidth="294.0" text="salary" />
+        </columns>
+      </TableView>
+      <Button layoutX="453.0" layoutY="133.0" mnemonicParsing="false" onAction="#AddtoListOnAction" prefHeight="25.0" prefWidth="104.0" text="Add to list" />
+      <TextField fx:id="designationTextField" layoutX="104.0" layoutY="52.0" />
+      <TextField fx:id="SalaryTextField" layoutX="347.0" layoutY="52.0" />
+   </children>
+</AnchorPane>
