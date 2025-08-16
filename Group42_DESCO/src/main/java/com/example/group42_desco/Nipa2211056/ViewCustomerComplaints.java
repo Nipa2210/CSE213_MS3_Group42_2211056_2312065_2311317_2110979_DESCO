@@ -8,22 +8,22 @@ import javafx.scene.control.TableView;
 public class ViewCustomerComplaints {
 
     @FXML
-    private TableColumn<?, ?> CIDcolumn;
+    private TableColumn<viewComplaints, String> CIDcolumn;
 
     @FXML
-    private TableView<?> CLtableView;
+    private TableView<viewComplaints> CLtableView;
 
     @FXML
-    private TableColumn<?, ?> CNcolumn;
+    private TableColumn<viewComplaints, String> CNcolumn;
 
     @FXML
-    private TableColumn<?, ?> CScolumn;
+    private TableColumn<viewComplaints, String> CScolumn;
 
     @FXML
-    private TableColumn<?, ?> MNcolumn;
+    private TableColumn<viewComplaints, String> MNcolumn;
 
     @FXML
-    private TableColumn<?, ?> SDcolumn;
+    private TableColumn<viewComplaints, String> SDcolumn;
 
     @FXML
     void ViewdetailsOnaction(ActionEvent event) {
