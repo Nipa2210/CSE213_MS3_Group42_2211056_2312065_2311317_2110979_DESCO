@@ -35,20 +35,106 @@ public class LoginController {
             warningLabel.setText("Login Successful!");
         }
 
-
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nipa/CustomerDashboard.fxml"));
-            Scene nextScene = new Scene(fxmlLoader.load());
-            Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-            nextStage.setTitle("Customer Dashboard");
-            nextStage.setScene(nextScene);
-            nextStage.show();
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-
+        if ((EnteryourNametextfield.getText().equals("Nipa")) && (UserPasswordfield.getText().equals("12345"))){
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nipa/CustomerDashboard.fxml"));
+                Scene nextScene = new Scene(fxmlLoader.load());
+                Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+                nextStage.setTitle("Customer Dashboard");
+                nextStage.setScene(nextScene);
+                nextStage.show();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+            warningLabel.setText("Login Successful");
+        } else if ((EnteryourNametextfield.getText().equals("Akter")) && (UserPasswordfield.getText().equals("12345"))) {
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nipa/CSRDashboard.fxml"));
+                Scene nextScene = new Scene(fxmlLoader.load());
+                Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+                nextStage.setTitle("Customer Service Officer Dashboard");
+                nextStage.setScene(nextScene);
+                nextStage.show();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+            warningLabel.setText("Login Successful");
+        } else if ((EnteryourNametextfield.getText().equals("Sakira")) && (UserPasswordfield.getText().equals("12345"))){
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/AccountantDashboard.fxml"));
+                Scene nextScene = new Scene(fxmlLoader.load());
+                Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+                nextStage.setTitle("Accountant Dashboard");
+                nextStage.setScene(nextScene);
+                nextStage.show();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+            warningLabel.setText("Login Successful");
+        }else if ((EnteryourNametextfield.getText().equals("Ahmed")) && (UserPasswordfield.getText().equals("12345"))){
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/MDDashboard.fxml"));
+                Scene nextScene = new Scene(fxmlLoader.load());
+                Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+                nextStage.setTitle("Managing Director Dashboard");
+                nextStage.setScene(nextScene);
+                nextStage.show();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+            warningLabel.setText("Login Successful");
+        }else if ((EnteryourNametextfield.getText().equals("Nabiha")) && (UserPasswordfield.getText().equals("12345"))){
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nabiha/.fxml"));
+                Scene nextScene = new Scene(fxmlLoader.load());
+                Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+                nextStage.setTitle("Live Broadcaster Dashboard");
+                nextStage.setScene(nextScene);
+                nextStage.show();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+            warningLabel.setText("Login Successful");
+        }else if ((EnteryourNametextfield.getText().equals("Sadika")) && (UserPasswordfield.getText().equals("12345"))){
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nabiha/.fxml"));
+                Scene nextScene = new Scene(fxmlLoader.load());
+                Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+                nextStage.setTitle("Viewer Dashboard");
+                nextStage.setScene(nextScene);
+                nextStage.show();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+            warningLabel.setText("Login Successful");
+        } else if ((EnteryourNametextfield.getText().equals("00007")) && (UserPasswordfield.getText().equals("12345"))){
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nur/.fxml"));
+                Scene nextScene = new Scene(fxmlLoader.load());
+                Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+                nextStage.setTitle("Singer Dashboard");
+                nextStage.setScene(nextScene);
+                nextStage.show();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+            warningLabel.setText("Login Successful");
+        }else if ((EnteryourNametextfield.getText().equals("00008")) && (UserPasswordfield.getText().equals("12345"))){
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Fahim/.fxml"));
+                Scene nextScene = new Scene(fxmlLoader.load());
+                Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+                nextStage.setTitle("Marketing Executive Dashboard");
+                nextStage.setScene(nextScene);
+                nextStage.show();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+            warningLabel.setText("Login Successful");
+        } else {
+            warningLabel.setText("Incorrect Username and Password");
         }
-
     }
-
 }
+
 

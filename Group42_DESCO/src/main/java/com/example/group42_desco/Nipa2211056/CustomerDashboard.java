@@ -21,6 +21,7 @@ public class CustomerDashboard {
             nextStage.setScene(nextScene);
             nextStage.show();
         } catch (Exception e) {
+            e.printStackTrace();
             throw new RuntimeException(e);
         }
     }
@@ -44,6 +45,17 @@ public class CustomerDashboard {
 
     @FXML
     void applyNewconnectionOnaction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nipa/Ap_NewConnection.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("New Connection Application");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
 
     }
 
@@ -63,6 +75,7 @@ public class CustomerDashboard {
             nextStage.setScene(nextScene);
             nextStage.show();
         } catch (Exception e) {
+            e.printStackTrace();
             throw new RuntimeException(e);
         }
 
@@ -79,9 +92,9 @@ public class CustomerDashboard {
             nextStage.setScene(nextScene);
             nextStage.show();
         } catch (Exception e) {
+            e.printStackTrace();
             throw new RuntimeException(e);
         }
-
     }
 
     @FXML
@@ -95,6 +108,7 @@ public class CustomerDashboard {
             nextStage.setScene(nextScene);
             nextStage.show();
         } catch (Exception e) {
+            e.printStackTrace();
             throw new RuntimeException(e);
 
         }
@@ -129,19 +143,40 @@ public class CustomerDashboard {
     public void MycomplaintsOnaction(ActionEvent actionEvent) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nipa/MyComplaints.fxml"));
+            fxmlLoader.load();
+        } catch (Exception e) {
+
+        }
+//            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nipa/MyComplaints.fxml"));
+//            Scene nextScene = new Scene(fxmlLoader.load());
+//            Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+//            nextStage.setTitle("Complaints View");
+//            nextStage.setScene(nextScene);
+//            nextStage.show();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            throw new RuntimeException(e);
+//        }
+
+
+    }
+
+    @FXML
+    public void LogOutOnaction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("LogOutView.fxml"));
             Scene nextScene = new Scene(fxmlLoader.load());
             Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-            nextStage.setTitle("Complaints View");
+            nextStage.setTitle("LogOut Board");
             nextStage.setScene(nextScene);
             nextStage.show();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-    }
-    @FXML
-    public void LogOutOnaction (ActionEvent actionEvent){
 
     }
 }
+
+
 
 

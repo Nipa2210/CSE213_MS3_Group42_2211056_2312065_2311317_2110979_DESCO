@@ -33,7 +33,7 @@ public class AddingEmployeeViewController {
     private TableView<String> EmployeeListTableView;
 
     @FXML
-    private TableColumn<HRMAddingEmployee, Stringtring> EmployeeNameTableColumn;
+    private TableColumn<HRMAddingEmployee, String> EmployeeNameTableColumn;
 
     @FXML
     private TextField EmployeeNameTextfield;
