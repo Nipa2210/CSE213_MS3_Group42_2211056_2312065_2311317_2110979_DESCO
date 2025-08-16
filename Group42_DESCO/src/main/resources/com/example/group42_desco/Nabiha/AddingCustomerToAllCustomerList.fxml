@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_desco.Nabiha.AddingCustometToAllCustomerListController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="5.0" prefHeight="729.0" prefWidth="871.0" style="-fx-background-color: lightBlue;">
+         <children>
+            <Label layoutX="88.0" layoutY="149.0" prefHeight="17.0" prefWidth="106.0" text="customer ID:" />
+            <Label layoutX="88.0" layoutY="104.0" prefHeight="17.0" prefWidth="61.0" text="Name:" />
+            <Label layoutX="88.0" layoutY="200.0" prefHeight="17.0" prefWidth="106.0" text="Customer type:" />
+            <Label layoutX="340.0" layoutY="342.0" prefHeight="17.0" prefWidth="173.0" text="All Customer List" underline="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="539.0" layoutY="175.0" mnemonicParsing="false" onAction="#AddToAllCustomerListOnAction" prefHeight="25.0" prefWidth="280.0" text="Add to All Customer list" />
+            <TextField fx:id="CustomerNameTextfield" layoutX="149.0" layoutY="100.0" prefHeight="25.0" prefWidth="496.0" />
+            <TextField fx:id="CustomerIDTextfield" layoutX="174.0" layoutY="145.0" prefHeight="25.0" prefWidth="211.0" />
+            <TextField fx:id="customerTypeTextfield" layoutX="182.0" layoutY="196.0" />
+            <TableView fx:id="AllCustomerTableView" layoutX="8.0" layoutY="388.0" prefHeight="327.0" prefWidth="855.0">
+               <columns>
+                  <TableColumn fx:id="NameTableColumn" prefWidth="284.0" text="Name" />
+                  <TableColumn fx:id="IDTableColumn" prefWidth="191.0" text="ID" />
+                  <TableColumn fx:id="CustomerTypeTableColumn" prefWidth="379.0" text="Customer type" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
