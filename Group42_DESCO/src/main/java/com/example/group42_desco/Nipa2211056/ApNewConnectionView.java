@@ -1,7 +1,85 @@
 package com.example.group42_desco.Nipa2211056;
 
-public class ApNewConnectionView
-{
-    @javafx.fxml.FXML
-    public void initialize() {
-    }}
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.*;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+
+public class ApNewConnectionView {
+
+    @FXML
+    private TextField Addresstextfield;
+
+    @FXML
+    private TextField Nametextfield;
+
+    @FXML
+    private TextField Phonenotextfield;
+
+    @FXML
+    private TextField Professiontextfield;
+
+    @FXML
+    private TextArea msgTextarea;
+
+    @FXML
+    private TextField nidNotextfield;
+    @FXML
+    private RadioButton Femaleradiobutton;
+    @FXML
+    private RadioButton Maleradiobutton;
+
+    //ArrayList<ApNewConnection> NewconectionList;
+    @FXML
+    private Label warningLabel;
+
+    @FXML
+    private void initialize() {
+        //NewconectionList = new ArrayList<>();
+        ToggleGroup tg = new ToggleGroup();
+        Femaleradiobutton.setToggleGroup(tg);
+        Maleradiobutton.setToggleGroup(tg);
+
+    }
+
+
+    @FXML
+    void applyButtonOnaction(ActionEvent actionEvent) {
+        boolean digitFound = false;
+        for (int i = 0; i < Nametextfield.getText().length(); i++) {
+            if (Nametextfield.getText().charAt(i) >= '0' && Addresstextfield.getText().charAt(i) <= '9') {
+                digitFound = true;
+            }
+        }
+        if (Nametextfield.getText().isEmpty() || Addresstextfield.getText().isEmpty() || digitFound) {
+            warningLabel.setText("Fill up the form properly.");
+            warningLabel.setStyle("-fx-border-color: red");
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setContentText("Fill up the form properly");
+            errorAlert.show();
+//        } else {
+//            boolean sameNameFound = false;
+//            for (ApNewConnection s : NewconectionList) {
+//                if (s.getName().equals(Nametextfield.getText())) {
+//                    sameNameFound = true;
+//                }
+//            }
+//            if (sameNameFound) {
+//                Alert sameNameError = new Alert(Alert.AlertType.ERROR);
+//                sameNameError.setContentText("Same Name Found");
+//                sameNameError.show();
+            }
+            else {
+                warningLabel.setText("Application Successful!");
+            }
+            String selectedGender = "";
+            if(Femaleradiobutton.isSelected()){
+                selectedGender = "Female";
+            }
+            else{
+                selectedGender = "Male";
+            }
+    }
+}

@@ -8,11 +8,9 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class MyComplaints {
+public class MyComplaintsController {
 
     @FXML
     private TextField CIDTextfield;
