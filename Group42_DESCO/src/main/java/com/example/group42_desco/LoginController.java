@@ -85,10 +85,10 @@ public class LoginController {
             warningLabel.setText("Login Successful");
         }else if ((EnteryourNametextfield.getText().equals("Nabiha")) && (UserPasswordfield.getText().equals("12345"))){
             try {
-                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nabiha/.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nabiha/BRSDashboardView.fxml"));
                 Scene nextScene = new Scene(fxmlLoader.load());
                 Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
-                nextStage.setTitle("Live Broadcaster Dashboard");
+                nextStage.setTitle("Live BRS Dashboard");
                 nextStage.setScene(nextScene);
                 nextStage.show();
             } catch (Exception e) {
@@ -97,10 +97,10 @@ public class LoginController {
             warningLabel.setText("Login Successful");
         }else if ((EnteryourNametextfield.getText().equals("Sadika")) && (UserPasswordfield.getText().equals("12345"))){
             try {
-                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nabiha/.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Nabiha/HRManagerDashboard.fxml"));
                 Scene nextScene = new Scene(fxmlLoader.load());
                 Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
-                nextStage.setTitle("Viewer Dashboard");
+                nextStage.setTitle("HRM Dashboard");
                 nextStage.setScene(nextScene);
                 nextStage.show();
             } catch (Exception e) {
